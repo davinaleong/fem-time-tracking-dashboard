@@ -34,6 +34,7 @@
   --clr-neutral-100: hsl(0, 100%, 100%);
   --clr-neutral-200: hsl(236, 100%, 87%);
   --clr-neutral-400: hsl(235, 45%, 61%);
+  --clr-neutral-700: hsl(236, 41%, 34%);
   --clr-neutral-800: hsl(235, 46%, 20%);
   --clr-neutral-900: hsl(226, 43%, 10%);
 
@@ -182,7 +183,7 @@ main {
 }
 
 .content-grid:where(:hover, :focus) {
-  background-color: var(--clr-primary-400);
+  background-color: var(--clr-neutral-700);
 }
 
 .cell-button {
@@ -347,6 +348,9 @@ main {
 .text-neutral-400 {
   color: var(--clr-neutral-400);
 }
+.text-neutral-700 {
+  color: var(--clr-neutral-700);
+}
 .text-neutral-800 {
   color: var(--clr-neutral-800);
 }
@@ -384,6 +388,9 @@ main {
 }
 .bg-neutral-400 {
   background-color: var(--clr-neutral-400);
+}
+.bg-neutral-700 {
+  background-color: var(--clr-neutral-700);
 }
 .bg-neutral-800 {
   background-color: var(--clr-neutral-800);
