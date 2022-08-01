@@ -86,7 +86,6 @@ body {
   font-size: var(--fs-base);
   font-family: var(--ff-body);
   font-weight: var(--fw-regular);
-  width: 100vw;
   min-height: 100vh;
   display: grid;
   grid-template-rows: auto 4em 2em;
@@ -171,6 +170,9 @@ main {
 /** Content - Grid **/
 .content-grid {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
   border-radius: var(--size-300);
   padding: var(--size-400);
   background-color: var(--clr-neutral-800);
@@ -181,6 +183,14 @@ main {
 
 .content-grid:where(:hover, :focus) {
   background-color: var(--clr-primary-400);
+}
+
+.cell-button {
+  justify-self: end;
+}
+
+.cell-previous {
+  justify-self: end;
 }
 
 /** Content - Components **/
@@ -223,27 +233,55 @@ main {
 }
 
 .decoration-work {
+  background-image: url(./../images/icon-work.svg);
+  background-repeat: no-repeat;
+  background-size: 5.5em;
+  background-position: 98% 40%;
   background-color: var(--clr-orange-400);
 }
 
 .decoration-play {
+  background-image: url(./../images/icon-play.svg);
+  background-repeat: no-repeat;
+  background-size: 5.5em;
+  background-position: 98% 40%;
   background-color: var(--clr-cyan-400);
 }
 
 .decoration-study {
+  background-image: url(./../images/icon-study.svg);
+  background-repeat: no-repeat;
+  background-size: 5.5em;
+  background-position: 98% 40%;
   background-color: var(--clr-red-400);
 }
 
 .decoration-exercise {
+  background-image: url(./../images/icon-exercise.svg);
+  background-repeat: no-repeat;
+  background-size: 5.5em;
+  background-position: 98% 40%;
   background-color: var(--clr-green-400);
 }
 
 .decoration-social {
+  background-image: url(./../images/icon-social.svg);
+  background-repeat: no-repeat;
+  background-size: 5.5em;
+  background-position: 98% 40%;
   background-color: var(--clr-purple-400);
 }
 
 .decoration-self-care {
+  background-image: url(./../images/icon-self-care.svg);
+  background-repeat: no-repeat;
+  background-size: 5.5em;
+  background-position: 98% 40%;
   background-color: var(--clr-yellow-400);
+}
+
+.content-heading {
+  color: var(--clr-neutral-100);
 }
 
 .button {
@@ -255,6 +293,12 @@ main {
 
 .button:where(:hover, :focus, :focus-visible) path {
   fill: var(--clr-neutral-100);
+}
+
+.content-current {
+  font-weight: var(--fw-light);
+  font-size: var(--fs-600);
+  color: var(--clr-neutral-100);
 }
 
 /** Content - End **/
