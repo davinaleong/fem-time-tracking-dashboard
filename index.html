@@ -2,15 +2,179 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/main.css" />
     <script defer type="module" src="./scripts/main.js"></script>
   </head>
-  <body>
+  <body class="text-neutral-200 bg-neutral-900">
+    <main>
+      <section class="dashboard-grid">
+        <header class="cell-header header-grid">
+          <div class="cell-user user-grid">
+            <img
+              src="./images/image-jeremy.png"
+              alt="Jeremy Robson"
+              class="user-image"
+            />
+            <h1 class="cell-header-heading fs-600">
+              <small class="fs-400">Report for</small><br />
+              <span class="text-neutral-100">Jeremy Robson</span>
+            </h1>
+          </div>
+          <div class="cell-nav">
+            <nav class="primary-nav">
+              <ul class="nav-list" role="list">
+                <li class="nav-item">
+                  <a
+                    href="#"
+                    class="nav-link"
+                    data-active
+                    data-timeframe="daily"
+                    >Daily</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link" data-timeframe="weekly"
+                    >Weekly</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link" data-timeframe="monthly"
+                    >Monthly</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+
+        <div class="cell-work" data-cell="work">
+          <div class="decoration decoration-work"></div>
+          <div class="content-grid">
+            <h2 class="cell-heading content-heading">Work</h2>
+            <button class="cell-button button" type="button">
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <div class="cell-current content-current">32hrs</div>
+            <div class="cell-previous content-previous">Last Week - 36hrs</div>
+          </div>
+        </div>
+
+        <div class="cell-play" data-cell="play">
+          <div class="decoration decoration-play"></div>
+          <div class="content-grid">
+            <h2 class="cell-heading content-heading">Play</h2>
+            <button class="cell-button button" type="button">
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <div class="cell-current content-current">32hrs</div>
+            <div class="cell-previous content-previous">Last Week - 36hrs</div>
+          </div>
+        </div>
+
+        <div class="cell-study" data-cell="study">
+          <div class="decoration decoration-study"></div>
+          <div class="content-grid">
+            <h2 class="cell-heading content-heading">Study</h2>
+            <button class="cell-button button" type="button">
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <div class="cell-current content-current">32hrs</div>
+            <div class="cell-previous content-previous">Last Week - 36hrs</div>
+          </div>
+        </div>
+
+        <div class="cell-exercise" data-cell="exercise">
+          <div class="decoration decoration-exercise"></div>
+          <div class="content-grid">
+            <h2 class="cell-heading content-heading">Exercise</h2>
+            <button class="cell-button button" type="button">
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <div class="cell-current content-current">32hrs</div>
+            <div class="cell-previous content-previous">Last Week - 36hrs</div>
+          </div>
+        </div>
+
+        <div class="cell-social" data-cell="social">
+          <div class="decoration decoration-social"></div>
+          <div class="content-grid">
+            <h2 class="cell-heading content-heading">Social</h2>
+            <button class="cell-button button" type="button">
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <div class="cell-current content-current">32hrs</div>
+            <div class="cell-previous content-previous">Last Week - 36hrs</div>
+          </div>
+        </div>
+
+        <div class="cell-self-care" data-cell="self-care">
+          <div class="decoration decoration-self-care"></div>
+          <div class="content-grid">
+            <h2 class="cell-heading content-heading">Self Care</h2>
+            <button class="cell-button button" type="button">
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <div class="cell-current content-current">32hrs</div>
+            <div class="cell-previous content-previous">Last Week - 36hrs</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <div class="swatches">
       <div class="bg-primary-400">&nbsp;</div>
       <div class="bg-orange-400">&nbsp;</div>
@@ -20,6 +184,7 @@
       <div class="bg-purple-400">&nbsp;</div>
       <div class="bg-yellow-400">&nbsp;</div>
       <div class="bg-neutral-100">&nbsp;</div>
+      <div class="bg-neutral-200">&nbsp;</div>
       <div class="bg-neutral-400">&nbsp;</div>
       <div class="bg-neutral-800">&nbsp;</div>
       <div class="bg-neutral-900">&nbsp;</div>
