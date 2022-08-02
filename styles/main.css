@@ -89,7 +89,7 @@ body {
   font-weight: var(--fw-regular);
   min-height: 100vh;
   display: grid;
-  grid-template-rows: auto 4em 2em;
+  grid-template-rows: auto 2em;
   justify-items: center;
   align-items: center;
   padding: var(--size-600) var(--size-400);
@@ -318,7 +318,6 @@ main {
 .button:where(:hover, :focus, :focus-visible) path {
   fill: var(--clr-neutral-100);
 }
-
 
 @media (min-width: 62em) {
   .button {
