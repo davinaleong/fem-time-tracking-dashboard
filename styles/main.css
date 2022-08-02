@@ -70,6 +70,7 @@
   --size-1000: 6rem;
   --size-1100: 7rem;
 
+  --container-padding: var(--size-600) var(--size-400);
   --column-spacing: var(--size-600);
 
   --input-height: 3.125em;
@@ -92,11 +93,18 @@ body {
   grid-template-rows: auto 2em;
   justify-items: center;
   align-items: center;
-  padding: var(--size-600) var(--size-400);
 }
 
 main {
   width: 100%;
+}
+
+.container {
+  --max-width: 1110px;
+  --horizontal-padding: var(--container-padding);
+
+  width: min(var(--max-width), 100% - (var(--horizontal-padding) * 2));
+  margin-inline: auto;
 }
 
 .even-columns {
