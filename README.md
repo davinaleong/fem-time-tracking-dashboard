@@ -4,7 +4,7 @@ Another simple challenge from Frontend Mentor.
 
 The challenge can be found [here](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw/hub/time-tracking-dashboard-vWEW-Y5na0).
 
-Demo page coming soon!
+Demo page can be found [here](https://davinaleong.github.io/fem-time-tracking-dashboard/)!
 
 ## Getting Started
 
